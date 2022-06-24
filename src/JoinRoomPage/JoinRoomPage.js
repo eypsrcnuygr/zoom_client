@@ -4,6 +4,7 @@ import { useLocation } from "react-router-dom";
 import { connect } from "react-redux";
 import { setIsRoomHost } from "../store/actions";
 import JoinRoomTitle from "./JoinRoomPageTitle";
+import JoinRoomContent from "./JoinRoomContent";
 
 const JoinRoomPage = (props) => {
   const { setIsRoomHostAction, isRoomHost } = props;
@@ -21,6 +22,7 @@ const JoinRoomPage = (props) => {
       <div className="join_room_page_panel">
         {" "}
         <JoinRoomTitle isRoomHost={isRoomHost} />
+        <JoinRoomContent />
       </div>
     </div>
   );
